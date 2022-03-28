@@ -1,0 +1,36 @@
+
+.router-outlet {
+  margin-top: 60px !important;
+}
+
+.app-settings {
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  background-color: #f44336;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.color-theme {
+  color: #0b3654;
+  font-weight: bold;
+}
+
+.theme-options {
+  padding: 10px;
+
+  // label {
+  //   color: #0b3654;
+  //   padding: 0 10px;
+  // }
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --textColor: #0b3654;
+  --backgroundColor: #f8f8f8;
+  --headerBackgroundColor: #FFF;
+  --buttonBackgroundColor: rgb(11 55 86 / 10%);
+  --labelTextColor:rgb(11 54 84 / 50%);
+
+}
+
+body.dark-theme {
+  --textColor: #f8f8f8;
+  --backgroundColor: #0b3654;
+  --headerBackgroundColor: #021b2c;
+  --buttonBackgroundColor: rgb(255 255 255 / 10%);
+  --labelTextColor: rgb(255 255 255 / 35%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: var(--textColor);
+  background-color:var(--backgroundColor);
+  margin: 0;
+}

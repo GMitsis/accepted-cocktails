@@ -1,27 +1,34 @@
 # AcceptedCoctails
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+## Objectives
+Implement CocktailsDB API Integration
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Requirements
+    Cocktails
+        The user must be able to:
+            - View cocktails list
+            - Filter Coctkails by Category
+            - View all coctkail details on a separate page
 
-## Code scaffolding
+    Search coctail(s)
+        The user must be able to search for a cocktail
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Set Scheme
+        The user must be able to select 'light'  or 'dark' mode
 
-## Build
+## Design
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The "Cocktails" component is responsible for displaying
+    Search Bar
+        Searched Cocktails are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
 
-## Running unit tests
+    Cocktail Categories
+    Firstly Cocktail Categories are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Cocktails list
+        Then Cocktail List is fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The "Cocktail Details" component is responsible for displaying coctail details
+    Cocktail Details are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php'

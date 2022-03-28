@@ -1,0 +1,65 @@
+.conctail-details-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  
+    .back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      color: var(--textColor);
+      background-color: var(--buttonBackgroundColor);
+      border-radius: 50%;
+  
+      &:hover {
+        cursor: pointer;
+        color: #4fa1d9;
+      }
+    }
+  
+    .coctail-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4fa1d9;
+      padding: 0 20px;
+    }
+  }
+  
+  .coctail-image-container {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 15%);
+  
+    .coctail-image {
+      display: flex;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  
+  .details-label {
+    color: var(--labelTextColor);
+  }
+  
+  .ingredients {
+    color: #009688;
+    font-weight: bold;
+  }
+  
+  .ingredient-container {
+    display: flex;
+  
+    .ingredient-name {
+      width: 25%;
+      padding: 10px;
+    }
+  
+    .ingredient-measure {
+      color: #4fa1d9;
+      padding: 10px;
+    }
+  }
+  

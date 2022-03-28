@@ -1,0 +1,40 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: var(--headerBackgroundColor);
+  padding: 0px 20px;
+  box-shadow: 0 2px 10px rgb(11 54 84 / 15%);
+
+  .title {
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .header-menu {
+    text-align: center;
+
+    .header-list {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      .header-list-item {
+        float: left;
+        padding: 10px 20px;
+
+        .router-link {
+          color: var(--textColor);
+          text-decoration: none;
+
+          &.active {
+            color: #4fa1d9;
+          }
+        }
+      }
+    }
+  }
+}

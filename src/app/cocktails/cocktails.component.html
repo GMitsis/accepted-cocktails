@@ -1,0 +1,40 @@
+<div class="p-grid p-m-0 p-jc-center">
+    <div class="p-col-12 p-lg-6">
+        <div class="search-container">
+            <div>
+                <i class="pi pi-search search-icon"></i>
+            </div>
+            <div class="search-input">
+                <input class="input-text" type="text" pInputText [(ngModel)]="searchValue" placeholder="Search Coctail" (input)="onInput($event)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid p-m-0">
+    <div class="p-col-12">
+        Filter By Category
+    </div>
+    <div class="p-col-12">
+        <div class="categories-list-container">
+            <div class="category-item" [class.active]="activeCategory === category.value" *ngFor="let category of categories" (click)="getCoctailsByCategory(category.value)">
+                {{ category.label }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid p-m-0">
+    <div class="p-col-12">
+        <div class="coctail-list-container">
+            <div class="coctail-item" *ngFor="let coctail of coctails; let i = index" (click)="getCoctailDetails(coctail.idDrink)">
+                <div class="coctail-image-container">
+                    <img class="coctail-image" src="{{ coctail.strDrinkThumb }}" alt="coctail.strDrink" loading="lazy">
+                </div>
+                <div class="coctail-name">
+                    {{ coctail.strDrink }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
