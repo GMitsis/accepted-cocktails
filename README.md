@@ -1,11 +1,13 @@
 # AcceptedCoctails
 
 ## Objectives
+
 Implement CocktailsDB API Integration
 
 ## Overview
 
-Requirements
+### Requirements
+
     Cocktails
         The user must be able to:
             - View cocktails list
@@ -20,15 +22,17 @@ Requirements
 
 ## Design
 
-The "Cocktails" component is responsible for displaying
-    Search Bar
-        Searched Cocktails are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
+### The "Cocktails" component is responsible for displaying
 
-    Cocktail Categories
-    Firstly Cocktail Categories are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
+Search Bar
+Searched Cocktails are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
 
-    Cocktails list
-        Then Cocktail List is fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
+Cocktail Categories
+Firstly Cocktail Categories are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
 
-The "Cocktail Details" component is responsible for displaying coctail details
-    Cocktail Details are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php'
+Cocktails list
+Then Cocktail List is fetched from 'https://www.thecocktaildb.com/api/json/v1/1/search.php'
+
+### The "Cocktail Details" component is responsible for displaying coctail details
+
+Cocktail Details are fetched from 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php'
